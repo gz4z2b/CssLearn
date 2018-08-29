@@ -1,0 +1,27 @@
+/* document */
+p {
+	color: blue;
+	text-decoration: underline;
+}
+p.key {
+	color: red;
+}
+strong {
+	color: brown;
+}
+.key {
+	color: green;
+}
+#principal {
+	font-weight: bolder;
+}
+
+/* table */
+#table-1 td:first-child {
+	color: red;
+}
+/*
+#table-1 tr:first-child  {
+	font-family: monospace;
+}
+*/

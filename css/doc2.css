@@ -1,0 +1,36 @@
+body {
+	counter-reset: title;
+}
+strong {
+	font: 200% serif;
+	color: #f00;
+	background-color: #ddf;
+}
+
+p::before {
+	content: url("https://mdn.mozillademos.org/files/924/Yellow-pin.png");
+}
+
+.spinach {
+	color: #0f0;
+}
+
+h3 { border-top: 1px solid gray; margin: 10px; }
+p { margin-bottom: 8px; }
+li { list-style: none; margin-bottom: 8px; }
+
+h3:before {
+	content: "(" counter(title, upper-latin) ")";
+	counter-increment: title;
+}
+ul { counter-reset: ocean_number; border: 5px solid blue;}
+li:before {
+	content: "(" counter(ocean_number, upper-roman) ")";
+	counter-increment: ocean_number;
+}
+h3.numbered {counter-reset: number; }
+p.numbered:before {
+	content: counter(number) ": ";
+	counter-increment: number;
+	font-weight: bold;
+}
